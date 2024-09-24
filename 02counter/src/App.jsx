@@ -11,8 +11,13 @@ const addvalue=()=>{
    
    if(counter<20)
   {
-    counter=counter + 1;
-    setCounter(counter)
+    
+    setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // I've learned this concept before from the React docs and it's called state as a snapshot.  When we write setCounter(counter+1) multiple times it is updated only once because in the onclick handler of that render, even after calling setCounter(counter + 1) multiple times the value of the counter is 15, because after our event handler finishes, then React re-renders the component.
   console.log("clicked",counter);
   
   }
